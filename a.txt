@@ -1,0 +1,13 @@
+git clone https://github.com/libgit2/libgit2
+git remote -v //显示当年你起了别名的地址
+git remote remove name //删除你看不顺眼的别名
+git remote add OuyangMaster git@github.com:WytheO/StudyContainer.git //给sshkey的地址起个别名，将OuyangMaster换成你要的名字
+//接下来就是按照正常步骤上传，add commit push，只是不用再输密码了
+
+git add .   // 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件 
+
+git commit -m "first commit" // 把添加的文件提交到版本库，并填写提交备注
+
+git fetch origin
+git merge origin/master
+git push --set-upstream origin master
